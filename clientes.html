@@ -836,6 +836,57 @@
       margin: 0 auto 8px;
     }
 
+    /* ===== VÍDEO DEPOIMENTO ===== */
+    .video-wrapper {
+      max-width: 780px;
+      margin: 52px auto 0;
+      position: relative;
+    }
+    .video-glow {
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(ellipse at center, rgba(244,196,0,0.12) 0%, transparent 70%);
+      pointer-events: none;
+      border-radius: 32px;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid rgba(244,196,0,0.25);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(244,196,0,0.1);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .video-caption {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      font-style: italic;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+    .video-caption-icon { font-style: normal; margin-right: 4px; }
+    .video-caption-tag {
+      display: block;
+      font-style: normal;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--dourado);
+      margin-top: 8px;
+    }
+    .video-cta-row {
+      text-align: center;
+      margin-top: 40px;
+    }
+
     /* ===== ADESÃO STEPS ===== */
     .adhesion-steps {
       max-width: 680px;
@@ -1048,9 +1099,10 @@
       <div class="hero-content animate-fade-up">
         <div class="hero-badge">☀️ Exclusivo para unidades no Estado de Goiás</div>
         <h1 class="hero-h1">
-          Sua conta de luz vai <span class="destaque-gold">cair todo mês</span> —
-          sem instalar placa, sem pagar nada e
-          <span class="destaque-green">sem assinar nenhum contrato de fidelidade.</span>
+          Pare de pagar caro na conta de luz —
+          <span class="destaque-gold">economize todo mês</span>
+          sem instalar placa e
+          <span class="destaque-green">sem investir nada.</span>
         </h1>
         <p class="hero-sub">
           A Sol Invictus é uma cooperativa de energia solar que distribui créditos de energia limpa
@@ -1472,6 +1524,43 @@
 </section>
 
 <!-- ===================== -->
+<!-- ===================== -->
+<!-- DEPOIMENTO EM VÍDEO  -->
+<!-- ===================== -->
+<section class="section-dark" id="depoimento">
+  <div class="container">
+    <div class="section-heading light">
+      <span class="section-label">Depoimento Real</span>
+      <h2>Veja o que quem já aderiu fala sobre a Sol Invictus.</h2>
+      <p>Cooperado de verdade, resultado de verdade. Assista ao depoimento abaixo.</p>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="video-glow"></div>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/MXKUSSWWXVI"
+          title="Depoimento cooperado Sol Invictus"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-caption">
+        <span class="video-caption-icon">💬</span>
+        "Na Sol Invictus eu sou beneficiada também financeiramente. Mas o que me move é o meio ambiente."
+        <span class="video-caption-tag">— Cooperada Sol Invictus</span>
+      </div>
+    </div>
+
+    <div class="video-cta-row">
+      <a href="https://formlux.freeluxenergia.com.br/?vend=5687" target="_blank" class="btn-cta btn-cta-gold btn-cta-lg cta-pulse">
+        ☀️ QUERO ESSA ECONOMIA TAMBÉM
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- 7. BASE LEGAL -->
 <!-- ===================== -->
 <section class="section-dark">
@@ -1543,8 +1632,8 @@
         <strong style="color: var(--branco);">sem multas e sem burocracia.</strong>
         Você fica pelos resultados — não por obrigação.
       </p>
-      <a href="https://wa.me/5562996866530?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20economia%20na%20minha%20conta%20de%20luz." target="_blank" class="btn-cta btn-cta-lg btn-cta-full cta-pulse">
-        💬 QUERO MEU DESCONTO AGORA!
+      <a href="https://formlux.freeluxenergia.com.br/?vend=5687" target="_blank" class="btn-cta btn-cta-lg btn-cta-full cta-pulse" style="background:linear-gradient(135deg,var(--dourado),var(--ambar));color:var(--roxo-deep);box-shadow:0 8px 30px rgba(244,196,0,0.4);">
+        ☀️ QUERO FAZER MINHA ADESÃO AGORA!
       </a>
       <div class="offer-urgency">
         ⚠️ Vagas limitadas conforme capacidade das usinas disponíveis em Goiás
