@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como reduzir a conta de luz do seu condomínio — Sol Invictus</title>
+  <meta name="description" content="Guia prático para síndicos e administradoras que querem entender como reduzir a conta de energia do condomínio sem obras, sem instalação e sem complicação." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --roxo: #5C1281;
+      --roxo-deep: #3E0E57;
+      --dourado: #F4C400;
+      --ambar: #E5A11C;
+      --lilas: #E9DDF2;
+      --branco: #FFFFFF;
+      --texto: #1a1a2e;
+      --texto-sec: #555577;
+      --cinza: #F5F5F8;
+      --verde-wpp: #25D366;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #1a0030;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ===== EBOOK CONTAINER ===== */
+    .ebook {
+      width: 100%;
+      max-width: 480px;
+      background: #fff;
+      box-shadow: 0 0 60px rgba(0,0,0,0.5);
+    }
+
+    /* ===== NAVEGAÇÃO ===== */
+    .ebook-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(62,14,87,0.97);
+      backdrop-filter: blur(8px);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .ebook-nav-brand {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--branco);
+      letter-spacing: 0.5px;
+    }
+    .ebook-nav-brand span {
+      color: var(--dourado);
+    }
+    .ebook-nav-cta {
+      background: var(--verde-wpp);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 7px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== SECTION BASE ===== */
+    section {
+      width: 100%;
+    }
+
+    /* ===== LABEL / CHIP ===== */
+    .label {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .label-gold { background: rgba(244,196,0,0.18); color: var(--ambar); }
+    .label-roxo { background: rgba(92,18,129,0.1); color: var(--roxo); }
+    .label-white { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 50px;
+      padding: 18px 28px;
+      font-size: 1rem;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-wpp {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #fff;
+      box-shadow: 0 8px 28px rgba(37,211,102,0.4);
+      font-size: 1.05rem;
+      padding: 20px 28px;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--dourado), var(--ambar));
+      color: var(--roxo-deep);
+      box-shadow: 0 8px 28px rgba(244,196,0,0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.9);
+      padding: 16px 28px;
+      font-size: 0.9rem;
+    }
+    .btn-small {
+      padding: 14px 24px;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    /* ===== PAGE DIVIDER ===== */
+    .page-divider {
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--roxo), var(--dourado), var(--roxo));
+    }
+
+    /* ===== PAGE FOOTER ===== */
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-top: 1px solid rgba(92,18,129,0.1);
+    }
+    .page-footer-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.68rem;
+      color: #aaa;
+    }
+    .page-num {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: var(--roxo);
+      background: var(--lilas);
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+
+    /* ===== CHIP SET ===== */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .chip {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      padding: 6px 14px;
+      border-radius: 50px;
+    }
+    .chip-gold {
+      background: var(--dourado);
+      color: var(--roxo-deep);
+    }
+    .chip-lilas {
+      background: var(--lilas);
+      color: var(--roxo);
+    }
+
+    /* ===== BOX ===== */
+    .box {
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+    .box-lilas { background: var(--lilas); }
+    .box-roxo { background: var(--roxo); color: #fff; }
+    .box-roxo-deep { background: var(--roxo-deep); color: #fff; }
+    .box-dark { background: #0E0020; color: #fff; }
+    .box-white {
+      background: #fff;
+      border: 1.5px solid var(--lilas);
+      box-shadow: 0 2px 12px rgba(92,18,129,0.07);
+    }
+
+    /* ===== CARDS GRID ===== */
+    .cards-grid {
+      display: grid;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .cards-grid-2 { grid-template-columns: 1fr 1fr; }
+    .card {
+      background: #fff;
+      border: 1.5px solid var(--lilas);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 12px rgba(92,18,129,0.06);
+    }
+    .card-icon {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--roxo);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .card-text {
+      font-size: 0.75rem;
+      color: var(--texto-sec);
+      line-height: 1.5;
+    }
+
+    /* ===== CHECKLIST ===== */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.84rem;
+      line-height: 1.5;
+      color: var(--texto);
+    }
+    .checklist li::before {
+      content: '✓';
+      min-width: 22px;
+      height: 22px;
+      background: var(--dourado);
+      color: var(--roxo-deep);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.7rem;
+      font-family: 'Poppins', sans-serif;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .checklist-white li { color: rgba(255,255,255,0.92); }
+    .checklist-white li::before { background: var(--dourado); color: var(--roxo-deep); }
+
+    /* ===== STEPS FLOW ===== */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 16px 0;
+    }
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      position: relative;
+    }
+    .step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 38px;
+      width: 2px;
+      height: calc(100% - 8px);
+      background: linear-gradient(to bottom, var(--dourado), var(--lilas));
+    }
+    .step-num {
+      min-width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--dourado), var(--ambar));
+      color: var(--roxo-deep);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 0.82rem;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .step-content { padding-bottom: 20px; }
+    .step-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--roxo);
+      margin-bottom: 4px;
+    }
+    .step-text { font-size: 0.78rem; color: var(--texto-sec); line-height: 1.5; }
+
+    /* ===== COMPARE TABLE ===== */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 16px 0;
+      border: 1.5px solid var(--lilas);
+    }
+    .compare-col { padding: 14px; }
+    .compare-col-left { background: #F9F6FC; border-right: 1.5px solid var(--lilas); }
+    .compare-col-right { background: #fff; }
+    .compare-header {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 10px 14px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .compare-header-left { background: rgba(92,18,129,0.08); color: var(--roxo-deep); border-right: 1.5px solid var(--lilas); border-bottom: 1.5px solid var(--lilas); }
+    .compare-header-right { background: var(--roxo); color: #fff; border-bottom: 1.5px solid var(--roxo); }
+    .compare-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      font-size: 0.75rem;
+      line-height: 1.4;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(92,18,129,0.06);
+      color: var(--texto-sec);
+    }
+    .compare-item:last-child { border-bottom: none; }
+    .compare-item .ci { font-size: 0.8rem; flex-shrink: 0; margin-top: 1px; }
+
+    /* ===== ECONOMY CARD ===== */
+    .economy-card {
+      background: #fff;
+      border: 1.5px solid var(--lilas);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 14px rgba(92,18,129,0.07);
+    }
+    .economy-card-header {
+      background: var(--roxo);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .economy-card-type {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .economy-card-badge {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.65rem;
+      background: var(--dourado);
+      color: var(--roxo-deep);
+      padding: 3px 10px;
+      border-radius: 50px;
+    }
+    .economy-card-body { padding: 16px; }
+    .economy-card-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--roxo);
+      margin-bottom: 2px;
+    }
+    .economy-card-subtitle { font-size: 0.72rem; color: var(--texto-sec); margin-bottom: 14px; }
+    .economy-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+      font-size: 0.78rem;
+    }
+    .economy-row-label { color: var(--texto-sec); }
+    .economy-row-val { font-family: 'Poppins', sans-serif; font-weight: 600; color: var(--texto); }
+    .economy-row-val.striked { text-decoration: line-through; color: #aaa; font-weight: 400; }
+    .economy-anual {
+      margin-top: 12px;
+      background: var(--lilas);
+      border-radius: 8px;
+      padding: 10px 14px;
+      text-align: center;
+    }
+    .economy-anual-label { font-size: 0.7rem; color: var(--roxo); margin-bottom: 2px; }
+    .economy-anual-val {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--dourado);
+      text-shadow: 0 1px 4px rgba(92,18,129,0.15);
+    }
+    .economy-anual-sub { font-size: 0.68rem; color: var(--texto-sec); margin-top: 2px; }
+
+    /* ===== CAPA ===== */
+    #capa {
+      background: linear-gradient(160deg, var(--roxo) 0%, var(--roxo-deep) 60%, #0E0020 100%);
+      padding: 32px 24px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    #capa::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 38px, rgba(255,255,255,0.025) 38px, rgba(255,255,255,0.025) 39px),
+        repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(255,255,255,0.025) 38px, rgba(255,255,255,0.025) 39px);
+      pointer-events: none;
+    }
+    .capa-logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 1rem;
+      color: #fff;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .capa-logo-dot {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, var(--dourado), var(--ambar));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+    .capa-logo-sub {
+      font-size: 0.62rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 400;
+      display: block;
+    }
+    .capa-h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.65rem;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      position: relative;
+    }
+    .capa-h1 em {
+      font-style: normal;
+      color: var(--dourado);
+    }
+    .capa-sub {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+    .capa-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .capa-chip {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(244,196,0,0.4);
+      color: rgba(255,255,255,0.9);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      padding: 6px 12px;
+      border-radius: 50px;
+    }
+    .capa-cta-hint {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(244,196,0,0.12);
+      border: 1px solid rgba(244,196,0,0.35);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+    }
+    .capa-cta-hint-icon { font-size: 1.1rem; }
+    .capa-cta-hint-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .capa-share {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 10px;
+      padding: 12px 14px;
+      text-align: center;
+    }
+    .capa-share-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 6px;
+    }
+    .capa-share-links {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 14px;
+      border-radius: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.7rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.15s;
+    }
+    .share-btn:active { opacity: 0.8; }
+    .share-wpp { background: #25D366; color: #fff; }
+    .share-copy {
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.3);
+      cursor: pointer;
+    }
+
+    /* ===== SECTION PADDING ===== */
+    .sec { padding: 28px 20px; }
+    .sec-purple {
+      background: linear-gradient(135deg, var(--roxo) 0%, var(--roxo-deep) 100%);
+      padding: 28px 20px;
+      color: #fff;
+    }
+    .sec-dark {
+      background: #0E0020;
+      padding: 28px 20px;
+      color: #fff;
+    }
+    .sec-cinza { background: var(--cinza); padding: 28px 20px; }
+
+    /* ===== TYPOGRAPHY ===== */
+    .sec-h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .sec-h2-roxo { color: var(--roxo); }
+    .sec-h2-white { color: #fff; }
+    .sec-sub {
+      font-size: 0.83rem;
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .sec-sub-dark { color: var(--texto-sec); }
+    .sec-sub-white { color: rgba(255,255,255,0.8); }
+    .sec-p {
+      font-size: 0.82rem;
+      line-height: 1.65;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .highlight-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--roxo);
+      line-height: 1.4;
+      padding: 12px 0;
+      border-top: 2px solid var(--lilas);
+      margin-top: 8px;
+    }
+    .highlight-text-white {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.95);
+      line-height: 1.4;
+      padding: 12px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      margin-top: 8px;
+    }
+    .sec-label {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.68rem;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .sec-label::before {
+      content: '';
+      width: 24px;
+      height: 3px;
+      background: var(--dourado);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .sec-label-roxo { color: var(--roxo); }
+    .sec-label-white { color: rgba(255,255,255,0.8); }
+    .sec-label-gold { color: var(--ambar); }
+
+    .gold-text { color: var(--dourado); }
+
+    /* ===== IMPACT BOX ===== */
+    .impact-box {
+      border-radius: 12px;
+      padding: 16px;
+      margin: 16px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .impact-box-roxo {
+      background: var(--roxo);
+      color: #fff;
+    }
+    .impact-box-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #fff;
+    }
+    .impact-box-text em {
+      font-style: normal;
+      color: var(--dourado);
+    }
+
+    /* ===== TRUST STRIP ===== */
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 20px;
+      padding: 14px 20px;
+      background: var(--lilas);
+    }
+    .trust-item {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.7rem;
+      color: var(--roxo);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .trust-item::before {
+      content: '•';
+      color: var(--dourado);
+      font-size: 1rem;
+    }
+    .trust-item:first-child::before { display: none; }
+
+    /* ===== FINAL CTA PAGE ===== */
+    #final-cta {
+      background: linear-gradient(160deg, var(--roxo) 0%, var(--roxo-deep) 50%, #0E0020 100%);
+      padding: 32px 20px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    #final-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 38px, rgba(255,255,255,0.02) 38px, rgba(255,255,255,0.02) 39px),
+        repeating-linear-gradient(90deg, transparent, transparent 38px, rgba(255,255,255,0.02) 38px, rgba(255,255,255,0.02) 39px);
+      pointer-events: none;
+    }
+
+    /* ===== SCROLL PROGRESS ===== */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      height: 3px;
+      background: rgba(255,255,255,0.1);
+      z-index: 200;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--dourado), var(--ambar));
+      width: 0%;
+      transition: width 0.1s;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 500px) {
+      .ebook { max-width: 100%; box-shadow: none; }
+      .progress-bar { max-width: 100%; }
+    }
+
+    /* ===== PRINT / PDF ===== */
+    @media print {
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+      /* Página no formato mobile 9:16 — 127mm × 226mm (equiv. 480×854px) */
+      @page {
+        size: 127mm 226mm;
+        margin: 0;
+      }
+
+      html, body { background: #fff !important; margin: 0; padding: 0; }
+      body { display: block; }
+      .ebook { max-width: 100%; box-shadow: none; width: 100%; }
+      .ebook-nav, .progress-bar { display: none !important; }
+
+      /* Cada .page-block = exatamente uma página 127×226mm */
+      .page-block {
+        page-break-after: always;
+        break-after: page;
+        display: flex;
+        flex-direction: column;
+        height: 226mm;
+        overflow: hidden;
+      }
+      .page-block:last-of-type {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+      /* Section se expande para preencher o espaço disponível */
+      .page-block > section {
+        flex: 1;
+        overflow: hidden;
+      }
+      /* Esconde divisores — page-break já faz o trabalho */
+      .page-divider { display: none; }
+      /* Rodapé fixo na base de cada página */
+      .page-footer {
+        margin-top: auto;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- BARRA DE PROGRESSO -->
+<div class="progress-bar" id="progressBar">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<div class="ebook">
+
+  <!-- NAV STICKY -->
+  <nav class="ebook-nav">
+    <div class="ebook-nav-brand">
+      Sol Invictus <span>·</span> Guia para Condomínios
+    </div>
+    <a href="https://wa.me/5562996866530?text=Olá!%20Sou%20síndico%20e%20quero%20reduzir%20a%20conta%20de%20energia%20do%20meu%20condomínio." target="_blank" rel="noopener" class="ebook-nav-cta">
+      <span>💬</span> WhatsApp
+    </a>
+  </nav>
+
+  <!-- =========================================================
+       PÁGINA 01 — CAPA
+  ========================================================= -->
+  <div class="page-block">
+  <section id="capa">
+    <div class="capa-logo">
+      <div class="capa-logo-dot">☀️</div>
+      <div>
+        Sol Invictus
+        <span class="capa-logo-sub">Cooperativa de energia solar</span>
+      </div>
+    </div>
+
+    <div class="label label-gold">Guia Exclusivo para Síndicos</div>
+
+    <h1 class="capa-h1">
+      Como reduzir a <em>conta de luz</em> do seu condomínio
+      <br>sem obras, sem instalação e sem complicação
+    </h1>
+
+    <p class="capa-sub">
+      Um guia prático para síndicos, administradoras e gestores que querem entender como buscar economia na conta de energia com mais simplicidade, segurança e clareza.
+    </p>
+
+    <div class="capa-chips">
+      <span class="capa-chip">✓ Sem instalação</span>
+      <span class="capa-chip">✓ Sem obra no imóvel</span>
+      <span class="capa-chip">✓ Economia por créditos</span>
+    </div>
+
+    <div class="capa-cta-hint">
+      <span class="capa-cta-hint-icon">👇</span>
+      <span class="capa-cta-hint-text">Veja no final como solicitar uma análise gratuita pelo WhatsApp.</span>
+    </div>
+
+    <div class="capa-share">
+      <p class="capa-share-text">Encaminhe para outros síndicos e administradoras 👇</p>
+      <div class="capa-share-links">
+        <a href="https://api.whatsapp.com/send?text=Olá!%20Encontrei%20este%20guia%20prático%20sobre%20como%20reduzir%20a%20conta%20de%20energia%20do%20condomínio%20sem%20obras%20ou%20instalação.%20Vale%20a%20pena%20conferir!%20https://solinvictus-condominios.vercel.app/ebook-condominios.html"
+           target="_blank" rel="noopener" class="share-btn share-wpp">
+          <span>📲</span> Compartilhar
+        </a>
+        <button onclick="copyLink()" class="share-btn share-copy" id="copyBtn">
+          <span>🔗</span> Copiar link
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">01</span>
+  </div>
+  </div><!-- /page-block 01 -->
+
+  <!-- =========================================================
+       PÁGINA 02 — APRESENTAÇÃO
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec" id="apresentacao">
+    <div class="sec-label sec-label-gold">Guia para Condomínios</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Se a conta de luz do condomínio pesa no caixa, este guia foi feito para você.
+    </h2>
+
+    <p class="sec-p">
+      A conta de luz das áreas comuns está entre os custos fixos que mais pressionam o orçamento de muitos condomínios. Elevadores, portaria, iluminação, bombas e outros consumos recorrentes fazem com que a despesa com energia elétrica pese mês após mês — e, em muitos casos, sem que o síndico veja uma saída simples, segura e viável para reduzir esse valor.
+    </p>
+
+    <p class="sec-p">
+      Este guia foi criado justamente para mostrar, de forma clara e objetiva, como funciona uma alternativa que permite buscar economia na conta de energia do condomínio <strong>sem obras, sem instalação no imóvel e sem complicação operacional.</strong>
+    </p>
+
+    <div class="box box-lilas" style="margin-top:20px;">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.85rem;color:var(--roxo);margin-bottom:12px;">Neste guia, você vai entender:</p>
+      <ul class="checklist">
+        <li>Por que a conta de energia do condomínio pesa tanto no orçamento</li>
+        <li>Como funciona a economia por créditos de energia</li>
+        <li>Quais são os principais benefícios para síndicos e condôminos</li>
+        <li>Por que essa solução é mais simples do que uma obra ou reforma</li>
+        <li>Como avaliar se o seu condomínio pode se encaixar</li>
+      </ul>
+    </div>
+
+    <p class="highlight-text">O primeiro passo para economizar com clareza é entender como o modelo funciona.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">02</span>
+  </div>
+  </div><!-- /page-block 02 -->
+
+  <!-- =========================================================
+       PÁGINA 03 — O PROBLEMA
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec-cinza" id="problema">
+    <div class="sec-label sec-label-roxo">A realidade dos condomínios</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      A conta de energia do condomínio pesa mais do que parece.
+    </h2>
+
+    <p class="sec-sub sec-sub-dark">
+      Elevadores, portaria, iluminação, bombas e áreas comuns transformam a energia elétrica em um dos custos fixos mais sensíveis da gestão condominial.
+    </p>
+
+    <p class="sec-p">
+      Em muitos condomínios, a conta de energia é tratada como mais uma despesa inevitável da operação. Mas, na prática, ela se tornou um dos custos fixos que mais pressionam o orçamento mensal. E o problema não está apenas no valor da fatura: está no efeito acumulado sobre o caixa, a previsibilidade financeira e a capacidade de gestão do síndico.
+    </p>
+
+    <p class="sec-p">
+      O mais crítico é que, muitas vezes, o problema cresce em silêncio — não gera urgência como uma obra emergencial, mas vai drenando recursos de forma constante.
+    </p>
+
+    <div class="impact-box impact-box-roxo">
+      <p class="impact-box-text">
+        O que parece apenas "mais uma conta" pode representar <em>milhares de reais por ano</em> saindo do caixa do condomínio.
+      </p>
+    </div>
+
+    <div class="cards-grid cards-grid-2">
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <div class="card-title">Tarifas que nunca param de subir</div>
+        <div class="card-text">Reajustes anuais e bandeiras tarifárias fazem a conta crescer sem controle.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💸</div>
+        <div class="card-title">Dinheiro do caixa indo embora</div>
+        <div class="card-text">Menos margem para manutenção, obras e fundo de reserva.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <div class="card-title">Soluções com obra e investimento</div>
+        <div class="card-text">Solar tradicional exige laudo, obra e alto custo inicial.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Burocracia que trava tudo</div>
+        <div class="card-text">Difícil de aprovar em assembleia sem gerar dívida ou tensão.</div>
+      </div>
+    </div>
+
+    <p class="highlight-text">O problema não é só o valor da fatura. É continuar tratando esse custo como inevitável.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">03</span>
+  </div>
+  </div><!-- /page-block 03 -->
+
+  <!-- =========================================================
+       PÁGINA 04 — O DESAFIO DA DECISÃO
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec" id="desafio">
+    <div class="sec-label sec-label-gold">O desafio da decisão</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      O problema não é querer economizar. É achar que isso exige obra, investimento e dor de cabeça.
+    </h2>
+
+    <p class="sec-p">
+      Em teoria, instalar um sistema próprio de energia solar pode parecer a resposta mais óbvia. Mas, quando essa decisão entra na realidade de um condomínio, o cenário muda. O que parece simples no discurso rapidamente se transforma em uma equação mais sensível — estrutura física, aprovação coletiva, orçamento, prazo de retorno.
+    </p>
+
+    <p class="sec-p">
+      E é exatamente aí que a maioria trava: não pela vontade de economizar, mas pelo peso da forma como sempre imaginaram que isso precisaria ser feito.
+    </p>
+
+    <div class="compare">
+      <div class="compare-header compare-header-left">Modelo Tradicional</div>
+      <div class="compare-header compare-header-right">Alternativa Simples</div>
+      <div class="compare-col compare-col-left">
+        <div class="compare-item"><span class="ci">❌</span> Exige placas no telhado ou área disponível</div>
+        <div class="compare-item"><span class="ci">❌</span> Pode envolver laudo estrutural e obra</div>
+        <div class="compare-item"><span class="ci">❌</span> Gera mais resistência em assembleia</div>
+        <div class="compare-item"><span class="ci">❌</span> Exige investimento ou financiamento</div>
+        <div class="compare-item"><span class="ci">❌</span> Retorno a longo prazo</div>
+        <div class="compare-item"><span class="ci">❌</span> Decisão pesada e burocrática</div>
+      </div>
+      <div class="compare-col compare-col-right">
+        <div class="compare-item"><span class="ci">✅</span> Não exige placas no imóvel</div>
+        <div class="compare-item"><span class="ci">✅</span> Dispensa obra e laudo estrutural</div>
+        <div class="compare-item"><span class="ci">✅</span> Fácil de apresentar em assembleia</div>
+        <div class="compare-item"><span class="ci">✅</span> Sem taxa de adesão ou investimento</div>
+        <div class="compare-item"><span class="ci">✅</span> Economia aparece na fatura sem obra</div>
+        <div class="compare-item"><span class="ci">✅</span> Processo digital, rápido e leve</div>
+      </div>
+    </div>
+
+    <div class="impact-box impact-box-roxo">
+      <p class="impact-box-text">Para a realidade de um condomínio, a melhor solução nem sempre é a mais "completa" no papel — e sim a <em>mais fácil de aprovar, implementar e sustentar.</em></p>
+    </div>
+
+    <p class="highlight-text">Quando a economia deixa de depender de obra, a decisão fica muito mais leve.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">04</span>
+  </div>
+  </div><!-- /page-block 04 -->
+
+  <!-- =========================================================
+       PÁGINA 05 — COMO FUNCIONA
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec-cinza" id="como-funciona">
+    <div class="sec-label sec-label-roxo">Como o modelo funciona</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      A economia chega à conta do condomínio sem placas, sem obra e sem complicação operacional.
+    </h2>
+
+    <p class="sec-sub sec-sub-dark">
+      Em vez de instalar um sistema próprio no condomínio, a Sol Invictus opera usinas solares em Goiás, transforma essa geração em créditos e aloca esses créditos na unidade consumidora do condomínio.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">⚡ A Sol Invictus gera energia</div>
+          <div class="step-text">Usinas solares em operação em Goiás produzem energia limpa e renovável em larga escala.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">🔌 A energia entra na rede</div>
+          <div class="step-text">A energia gerada é injetada na rede da distribuidora e convertida em créditos de compensação.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">🏢 Os créditos vão para o condomínio</div>
+          <div class="step-text">Os créditos são alocados na unidade consumidora do condomínio, como cooperado da Sol Invictus.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">💰 A economia aparece na fatura</div>
+          <div class="step-text">A redução entra automaticamente na conta de luz do condomínio, mês após mês, sem ação extra após a adesão.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box-lilas">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.82rem;color:var(--roxo);margin-bottom:10px;">Na prática, o síndico só precisa:</p>
+      <ul class="checklist">
+        <li>Preencher o formulário online</li>
+        <li>Enviar os dados do condomínio</li>
+        <li>Anexar a última fatura e documentos básicos</li>
+        <li>Aguardar a validação e a ativação dos créditos</li>
+      </ul>
+    </div>
+
+    <p class="highlight-text">O condomínio não precisa instalar nada no telhado, fazer obra ou gerenciar manutenção local.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">05</span>
+  </div>
+  </div><!-- /page-block 05 -->
+
+  <!-- =========================================================
+       PÁGINA 06 — BENEFÍCIOS
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec" id="beneficios">
+    <div class="sec-label sec-label-gold">Por que isso faz sentido</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Mais do que economia: uma decisão mais leve, segura e inteligente para o condomínio.
+    </h2>
+
+    <p class="sec-sub sec-sub-dark">
+      Com a Sol Invictus, o condomínio pode buscar economia recorrente na fatura sem obra, sem taxa de adesão, sem fidelidade contratual e com processo digital em menos de 5 minutos.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">📉</div>
+        <div class="card-title">Redução real e recorrente de custo fixo</div>
+        <div class="card-text">A economia aparece todo mês na fatura, abrindo espaço para manutenção, obras e fundo de reserva.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚫💰</div>
+        <div class="card-title">Sem investimento inicial</div>
+        <div class="card-text">Sem taxa de adesão, sem instalação e sem manutenção. A barreira de entrada é zero.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗳️</div>
+        <div class="card-title">Mais facilidade para aprovação</div>
+        <div class="card-text">Sem obra, sem dívida e sem impacto no fundo de reserva — muito mais simples de apresentar em assembleia.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <div class="card-title">Sustentabilidade como diferencial</div>
+        <div class="card-text">O condomínio passa a consumir energia limpa e renovável, fortalecendo a percepção de modernidade.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <div class="card-title">Gestão digital e simples</div>
+        <div class="card-text">Processo 100% digital, sem deslocamento, com acompanhamento pelo consultor até a ativação.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔓</div>
+        <div class="card-title">Sem fidelidade contratual</div>
+        <div class="card-text">O condomínio não fica preso. A solução deve fazer sentido continuamente.</div>
+      </div>
+    </div>
+
+    <p class="highlight-text">Quando a conta cai e a gestão respira, o condomínio inteiro sente a diferença.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">06</span>
+  </div>
+  </div><!-- /page-block 06 -->
+
+  <!-- =========================================================
+       PÁGINA 07 — EXEMPLOS FINANCEIROS
+  ========================================================= -->
+  <div class="page-block">
+  <section class="sec-cinza" id="exemplos">
+    <div class="sec-label sec-label-roxo">Quanto isso pode representar no caixa</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Quanto maior a conta de energia, maior o impacto da economia no caixa do condomínio.
+    </h2>
+
+    <p class="sec-sub sec-sub-dark">
+      Projeções ilustrativas com base em 20% de economia. O resultado real pode variar entre 17% e 25%, conforme perfil de consumo, distribuidora e bandeira tarifária vigente.
+    </p>
+
+    <div class="economy-card">
+      <div class="economy-card-header">
+        <span class="economy-card-type">Prédio Residencial</span>
+        <span class="economy-card-badge">Mais comum</span>
+      </div>
+      <div class="economy-card-body">
+        <div class="economy-card-title">Condomínio de médio porte</div>
+        <div class="economy-card-subtitle">20 a 60 unidades</div>
+        <div class="economy-row">
+          <span class="economy-row-label">Fatura atual</span>
+          <span class="economy-row-val striked">R$ 3.000/mês</span>
+        </div>
+        <div class="economy-row">
+          <span class="economy-row-label">Com Sol Invictus (20%)</span>
+          <span class="economy-row-val" style="color:var(--roxo);">R$ 2.400/mês</span>
+        </div>
+        <div class="economy-anual">
+          <div class="economy-anual-label">Economia estimada ao ano</div>
+          <div class="economy-anual-val">R$ 7.200</div>
+          <div class="economy-anual-sub">por ano no caixa do condomínio</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="economy-card">
+      <div class="economy-card-header">
+        <span class="economy-card-type">Prédio Residencial</span>
+      </div>
+      <div class="economy-card-body">
+        <div class="economy-card-title">Condomínio de grande porte</div>
+        <div class="economy-card-subtitle">60 a 200 unidades</div>
+        <div class="economy-row">
+          <span class="economy-row-label">Fatura atual</span>
+          <span class="economy-row-val striked">R$ 6.000/mês</span>
+        </div>
+        <div class="economy-row">
+          <span class="economy-row-label">Com Sol Invictus (20%)</span>
+          <span class="economy-row-val" style="color:var(--roxo);">R$ 4.800/mês</span>
+        </div>
+        <div class="economy-anual">
+          <div class="economy-anual-label">Economia estimada ao ano</div>
+          <div class="economy-anual-val">R$ 14.400</div>
+          <div class="economy-anual-sub">por ano no caixa do condomínio</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="economy-card">
+      <div class="economy-card-header">
+        <span class="economy-card-type">Condomínio Horizontal</span>
+      </div>
+      <div class="economy-card-body">
+        <div class="economy-card-title">Condomínio fechado de casas</div>
+        <div class="economy-card-subtitle">100 a 300 unidades</div>
+        <div class="economy-row">
+          <span class="economy-row-label">Fatura atual</span>
+          <span class="economy-row-val striked">R$ 10.000/mês</span>
+        </div>
+        <div class="economy-row">
+          <span class="economy-row-label">Com Sol Invictus (20%)</span>
+          <span class="economy-row-val" style="color:var(--roxo);">R$ 8.000/mês</span>
+        </div>
+        <div class="economy-anual">
+          <div class="economy-anual-label">Economia estimada ao ano</div>
+          <div class="economy-anual-val">R$ 24.000</div>
+          <div class="economy-anual-sub">por ano no caixa do condomínio</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box-white" style="border-color:rgba(92,18,129,0.15);font-size:0.72rem;color:var(--texto-sec);line-height:1.5;">
+      ⓘ Valores estimados com base em 20% de economia. O resultado real pode variar entre 17% e 25%, conforme perfil de consumo, distribuidora e bandeira tarifária vigente.
+    </div>
+
+    <div class="impact-box impact-box-roxo">
+      <p class="impact-box-text">Quando o síndico visualiza a economia em 12 meses, a proposta deixa de ser "interessante" e passa a ser <em>financeiramente relevante.</em></p>
+    </div>
+
+    <p class="highlight-text">O que parece uma pequena diferença mensal pode virar uma grande decisão de gestão ao longo do ano.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">07</span>
+  </div>
+  </div><!-- /page-block 07 -->
+
+  <!-- =========================================================
+       PÁGINA 08 — SEGURANÇA NA DECISÃO
+  ========================================================= -->
+  <!-- PÁGINA 08 — SEGURANÇA: headline + intro + 2 cards -->
+  <div class="page-block">
+  <section class="sec" id="seguranca">
+    <div class="sec-label sec-label-gold">Segurança na decisão</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Quando a solução é simples, sem obra e com base regulatória clara, a decisão fica muito mais segura para o condomínio.
+    </h2>
+
+    <p class="sec-p">
+      Em muitos casos, o síndico não deixa de avançar por falta de interesse, mas por receio de escolher um caminho que gere obra, dívida ou questionamento futuro. Por isso, segurança aqui significa ser uma solução mais leve de aprovar, mais simples de operar e mais clara de justificar.
+    </p>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <div class="card-title">Segurança Operacional</div>
+        <div class="card-text">
+          <ul class="checklist" style="margin-top:6px;">
+            <li>Sem placas no telhado</li>
+            <li>Sem obra no condomínio</li>
+            <li>Sem manutenção local</li>
+            <li>Sem impacto na rotina</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <div class="card-title">Segurança Financeira</div>
+        <div class="card-text">
+          <ul class="checklist" style="margin-top:6px;">
+            <li>Sem taxa de adesão</li>
+            <li>Sem investimento inicial</li>
+            <li>Sem fidelidade</li>
+            <li>Sem comprometer o caixa</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:4px;">
+      <div class="card-icon">⚖️</div>
+      <div class="card-title">Segurança Regulatória</div>
+      <div class="card-text">
+        <ul class="checklist" style="margin-top:6px;">
+          <li>Lei nº 14.300/2022 — marco legal da geração distribuída</li>
+          <li>Regulamentado pela ANEEL</li>
+          <li>Sistema de Compensação de Energia Elétrica (SCEE)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">08</span>
+  </div>
+  </div><!-- /page-block 08 -->
+
+  <!-- PÁGINA 09 — SEGURANÇA: conclusão + impacto -->
+  <div class="page-block">
+  <section class="sec-cinza">
+    <div class="sec-label sec-label-roxo">Segurança na decisão</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      O condomínio não precisa mudar de distribuidora nem instalar nada para começar a economizar.
+    </h2>
+
+    <p class="sec-p">
+      A lógica é simples: a Sol Invictus gera energia nas usinas, injeta na rede e os créditos são alocados na conta do condomínio. Tudo dentro do modelo de compensação previsto em lei, sem que o condomínio precise alterar sua estrutura física ou seus contratos atuais.
+    </p>
+
+    <div class="box box-lilas">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.82rem;color:var(--roxo);margin-bottom:8px;">⚖️ Base legal em linguagem simples</p>
+      <p style="font-size:0.8rem;color:var(--texto-sec);line-height:1.6;">
+        A Lei nº 14.300/2022 instituiu o marco legal da micro e minigeração distribuída e o Sistema de Compensação de Energia Elétrica (SCEE). A ANEEL regulamentou esse marco, dando previsibilidade ao modelo dentro do setor elétrico brasileiro.
+      </p>
+    </div>
+
+    <div class="impact-box impact-box-roxo">
+      <p class="impact-box-text">O condomínio continua com a distribuidora, continua recebendo sua conta normalmente e passa a ver a <em>economia aparecer na fatura</em> por compensação de créditos.</p>
+    </div>
+
+    <p class="highlight-text">Segurança, aqui, não é complicar a decisão. É justamente torná-la mais clara, leve e justificável para o condomínio.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">09</span>
+  </div>
+  </div><!-- /page-block 09 -->
+
+  <!-- PÁGINA 10 — PRÓXIMO PASSO: quando vale a pena -->
+  <div class="page-block">
+  <section class="sec" id="proximo-passo">
+    <div class="sec-label sec-label-gold">Próximo passo</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Se o condomínio quer reduzir custo sem obra, sem investimento e sem complicação, já vale pedir uma análise.
+    </h2>
+
+    <p class="sec-p">
+      Pedir uma análise não significa assumir compromisso imediato. Significa olhar o caso do condomínio com clareza, usando a fatura real para entender se a proposta faz sentido na prática.
+    </p>
+
+    <div class="box box-lilas">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.85rem;color:var(--roxo);margin-bottom:12px;">Vale a pena pedir uma análise quando o condomínio:</p>
+      <ul class="checklist">
+        <li>Tem conta de energia relevante nas áreas comuns</li>
+        <li>Quer reduzir custo fixo sem comprometer o caixa</li>
+        <li>Não quer lidar com obra, placas ou laudo estrutural</li>
+        <li>Precisa de uma proposta fácil de apresentar em assembleia</li>
+        <li>Quer avaliar a economia com base na própria fatura</li>
+        <li>Busca uma solução simples, digital e regulamentada</li>
+      </ul>
+    </div>
+
+    <p class="highlight-text">O melhor momento para avaliar não é depois de mais um reajuste. É quando o condomínio já entendeu que esse custo merece atenção.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">10</span>
+  </div>
+  </div><!-- /page-block 10 -->
+
+  <!-- PÁGINA 11 — O QUE TER EM MÃOS + CTA WHATSAPP -->
+  <div class="page-block">
+  <section class="sec-cinza">
+    <div class="sec-label sec-label-roxo">Como dar o próximo passo</div>
+
+    <h2 class="sec-h2 sec-h2-roxo">
+      Com poucos dados em mãos, um consultor já consegue orientar o condomínio.
+    </h2>
+
+    <p class="sec-p">
+      Para o síndico, isso é importante porque evita decisão no escuro. Em vez de tentar imaginar, o condomínio passa a avaliar com base no próprio perfil de consumo e nas condições da unidade.
+    </p>
+
+    <div class="box box-white">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.82rem;color:var(--roxo);margin-bottom:10px;">📋 Para pedir a análise, normalmente basta ter em mãos:</p>
+      <ul class="checklist">
+        <li>Última fatura de energia do condomínio</li>
+        <li>Nome do condomínio ou razão social</li>
+        <li>CNPJ e endereço da unidade</li>
+        <li>Dados do síndico ou administradora responsável</li>
+      </ul>
+      <p style="font-size:0.75rem;color:var(--texto-sec);line-height:1.5;font-style:italic;margin-top:10px;">Depois disso, um consultor valida a elegibilidade e acompanha a ativação.</p>
+    </div>
+
+    <div class="box box-roxo" style="margin-top:16px;">
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.9rem;color:#fff;margin-bottom:6px;">💬 Caminho mais simples:</p>
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.85);line-height:1.55;">
+        Se o condomínio já tem a fatura em mãos, o caminho mais direto é falar com um consultor e pedir uma análise pelo WhatsApp.
+      </p>
+    </div>
+
+    <p class="highlight-text">A análise é gratuita, sem compromisso e pode ser feita em menos de 5 minutos.</p>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer">
+    <span class="page-footer-text">Sol Invictus · Guia para Condomínios</span>
+    <span class="page-num">11</span>
+  </div>
+  </div><!-- /page-block 11 -->
+
+  <!-- PÁGINA 12 — CTA FINAL -->
+  <div class="page-block">
+  <section id="final-cta">
+    <div class="sec" style="padding:28px 20px 0; background: transparent;">
+      <div class="sec-label sec-label-white">Hora de avaliar o seu condomínio</div>
+
+      <h2 class="sec-h2 sec-h2-white" style="font-size:1.3rem;">
+        Fale com um consultor e veja se o seu condomínio pode economizar com simplicidade, segurança e sem investimento inicial.
+      </h2>
+
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.75);line-height:1.6;margin:14px 0 22px;">
+        Com a última fatura em mãos, um consultor pode orientar se o seu condomínio se enquadra, qual é o potencial de economia e como seguir com clareza — sem compromisso e sem burocracia.
+      </p>
+
+      <!-- CTA PRINCIPAL — WhatsApp -->
+      <a href="https://wa.me/5562996866530?text=Olá!%20Sou%20síndico%20e%20li%20o%20guia%20da%20Sol%20Invictus.%20Quero%20saber%20se%20meu%20condomínio%20pode%20reduzir%20a%20conta%20de%20energia."
+         target="_blank" rel="noopener" class="btn btn-wpp" style="margin-bottom:10px;">
+        <span style="font-size:1.3rem;">💬</span>
+        Quero falar com um consultor no WhatsApp
+      </a>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.55);text-align:center;margin-bottom:18px;">
+        Ideal para tirar dúvidas e validar o encaixe do condomínio com rapidez.
+      </p>
+
+      <!-- CTA SECUNDÁRIO — Formulário -->
+      <a href="https://formlux.freeluxenergia.com.br/?vend=8567"
+         target="_blank" rel="noopener" class="btn btn-gold btn-small" style="margin-bottom:8px;">
+        <span style="font-size:1rem;">📋</span>
+        Prefiro preencher o formulário oficial
+      </a>
+      <p style="font-size:0.7rem;color:rgba(255,255,255,0.45);text-align:center;margin-bottom:24px;">
+        Para quem já quer enviar os dados e avançar para análise.
+      </p>
+
+      <!-- FRASE FINAL -->
+      <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.85rem;color:rgba(255,255,255,0.88);line-height:1.5;padding:16px 0;border-top:1px solid rgba(255,255,255,0.15);margin-bottom:16px;">
+        O melhor momento para começar a reduzir esse custo é quando o condomínio já entendeu que ele não precisa continuar sendo tratado como inevitável.
+      </p>
+
+      <!-- TRUST FINAL -->
+      <div style="text-align:center;padding-bottom:20px;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;">
+          <span style="font-family:'Poppins',sans-serif;font-size:0.68rem;color:rgba(255,255,255,0.5);font-weight:600;">Sem obra</span>
+          <span style="color:var(--dourado);">•</span>
+          <span style="font-family:'Poppins',sans-serif;font-size:0.68rem;color:rgba(255,255,255,0.5);font-weight:600;">Sem taxa de adesão</span>
+          <span style="color:var(--dourado);">•</span>
+          <span style="font-family:'Poppins',sans-serif;font-size:0.68rem;color:rgba(255,255,255,0.5);font-weight:600;">Sem fidelidade</span>
+          <span style="color:var(--dourado);">•</span>
+          <span style="font-family:'Poppins',sans-serif;font-size:0.68rem;color:rgba(255,255,255,0.5);font-weight:600;">Regulamentado pela ANEEL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="page-divider"></div>
+  <div class="page-footer" style="background:var(--roxo-deep);">
+    <span class="page-footer-text" style="color:rgba(255,255,255,0.4);">Sol Invictus · Cooperativa de energia solar</span>
+    <span class="page-num">12</span>
+  </div>
+  </div><!-- /page-block 12 -->
+
+  <!-- =========================================================
+       RODAPÉ INSTITUCIONAL
+  ========================================================= -->
+  <footer style="background:#0E0020;padding:20px;text-align:center;">
+    <p style="font-family:'Poppins',sans-serif;font-weight:700;font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:4px;">Sol Invictus</p>
+    <p style="font-size:0.68rem;color:rgba(255,255,255,0.3);line-height:1.5;">
+      Cooperativa de energia solar · Goiânia, GO<br>
+      (62) 99686-6530 · contato@solinvictus.coop.br
+    </p>
+  </footer>
+
+</div><!-- /ebook -->
+
+<script>
+  // ===== PROGRESS BAR =====
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    document.getElementById('progressFill').style.width = progress + '%';
+  });
+
+  // ===== COPY LINK =====
+  function copyLink() {
+    const url = window.location.href;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.getElementById('copyBtn');
+        btn.innerHTML = '<span>✅</span> Copiado!';
+        setTimeout(() => { btn.innerHTML = '<span>🔗</span> Copiar link'; }, 2500);
+      });
+    } else {
+      // fallback
+      const el = document.createElement('textarea');
+      el.value = url;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      const btn = document.getElementById('copyBtn');
+      btn.innerHTML = '<span>✅</span> Copiado!';
+      setTimeout(() => { btn.innerHTML = '<span>🔗</span> Copiar link'; }, 2500);
+    }
+  }
+</script>
+
+</body>
+</html>
